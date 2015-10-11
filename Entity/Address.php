@@ -27,7 +27,6 @@ class Address implements AddressInterface
      *
      * @ORM\Column(type="string", length=255)
      * @Assert\Country()
-     * @Assert\NotBlank()
      * @Assert\Length(min="2", max="255")
      */
     protected $country;
@@ -60,7 +59,6 @@ class Address implements AddressInterface
      * @var string
      *
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\NotBlank()
      * @Assert\Length(max="255")
      */
     protected $city;
@@ -77,7 +75,6 @@ class Address implements AddressInterface
      * @var string
      *
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\NotBlank()
      * @Assert\Length(max="255")
      */
     protected $street;
